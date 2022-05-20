@@ -145,7 +145,7 @@ To use the Diskpart.exe utility to clean the hard disk, follow these steps:
 2. On the **disk selection** screen, press SHIFT+F10. A **Command Prompt** window opens.
 3. Type *diskpart*, and then press ENTER to open the diskpart tool.
 4. Type `list disk`, and then press ENTER. A list of available hard disks is displayed.
-5. Type `sel disk number`, and then press ENTER. **number** is the number of the hard disk that you want to clean. The hard disk is now selected.
+5. Type `sel disk [number]` where "[number]" is the number of the hard disk that you want to clean. Then press ENTER. The hard disk is now selected.
 6. Type `det disk`, and then press ENTER. A list of partitions on the hard disk is displayed. Use this information to verify that the correct disk is selected.
 7. Make sure that the disk does not contain required data, type `clean all`, and then press ENTER to clean the disk. All the partitions and all the data on the disk is permanently removed.
 8. Type `exit`, and then press ENTER to close the diskpart tool.
